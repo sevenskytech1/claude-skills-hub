@@ -2,13 +2,13 @@
    1. CSS Variables & Reset
    ========================================= */
 :root {
-    --color-primary: #2563eb;       /* Blue accent */
-    --color-primary-dark: #1d4ed8;  /* Darker blue for hover */
-    --color-bg: #ffffff;            /* White background */
-    --color-bg-light: #f8fafc;      /* Light gray background */
-    --color-bg-blue: #1e3a8a;       /* Dark blue for contrast sections */
-    --color-text: #1e293b;          /* Dark text for readability */
-    --color-text-muted: #64748b;    /* Muted text */
+    --color-primary: #2563eb;
+    --color-primary-dark: #1d4ed8;
+    --color-bg: #ffffff;
+    --color-bg-light: #f8fafc;
+    --color-bg-blue: #1e3a8a;
+    --color-text: #1e293b;
+    --color-text-muted: #64748b;
     --color-white: #ffffff;
     --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --max-width: 1100px;
@@ -26,10 +26,39 @@ body {
     color: var(--color-text);
     background-color: var(--color-bg);
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased; /* Makes text look smoother on Mac */
 }
 
 /* =========================================
-   2. Utility Classes
+   2. Accessibility: Skip Link & Focus States
+   ========================================= */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 15px;
+    z-index: 200;
+    font-weight: 600;
+    text-decoration: none;
+    transition: top 0.2s;
+}
+
+/* When the user tabs to the skip link, it slides into view */
+.skip-link:focus {
+    top: 0;
+}
+
+/* Clear visual outline when navigating with a keyboard */
+a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* =========================================
+   3. Utility Classes & Typography
    ========================================= */
 .container {
     max-width: var(--max-width);
@@ -41,37 +70,28 @@ body {
     padding: 80px 0;
 }
 
-.bg-light {
-    background-color: var(--color-bg-light);
-}
-
-.bg-blue {
-    background-color: var(--color-bg-blue);
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-white {
-    color: var(--color-white);
-}
+.bg-light { background-color: var(--color-bg-light); }
+.bg-blue { background-color: var(--color-bg-blue); }
+.text-center { text-align: center; }
+.text-white { color: var(--color-white); }
 
 .text-white-muted {
     color: #cbd5e1;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto 30px auto;
+    line-height: 1.7; /* Better readability */
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 40px;
     text-align: center;
     color: var(--color-text);
+    letter-spacing: -0.02em; /* Modern documentation look */
 }
 
 /* =========================================
-   3. Header & Navigation
+   4. Header & Navigation
    ========================================= */
 .site-header {
     background-color: var(--color-bg);
@@ -93,6 +113,7 @@ body {
     font-weight: 700;
     color: var(--color-primary);
     text-decoration: none;
+    letter-spacing: -0.01em;
 }
 
 .main-nav ul {
@@ -118,7 +139,7 @@ body {
 }
 
 /* =========================================
-   4. Hero Section
+   5. Hero Section
    ========================================= */
 .hero-section {
     padding: 100px 0;
@@ -126,16 +147,18 @@ body {
 }
 
 .hero-section h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin-bottom: 20px;
-    line-height: 1.2;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
 }
 
-.hero-section p {
+.hero-text {
     font-size: 1.2rem;
     color: var(--color-text-muted);
     max-width: 600px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 35px auto;
+    line-height: 1.7;
 }
 
 .hero-buttons {
@@ -145,11 +168,11 @@ body {
 }
 
 /* =========================================
-   5. Buttons
+   6. Buttons
    ========================================= */
 .btn {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 12px 26px;
     border-radius: var(--border-radius);
     text-decoration: none;
     font-weight: 600;
@@ -160,33 +183,18 @@ body {
     transform: translateY(-2px);
 }
 
-.btn-primary {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-
-.btn-primary:hover {
-    background-color: var(--color-primary-dark);
-}
+.btn-primary { background-color: var(--color-primary); color: var(--color-white); }
+.btn-primary:hover { background-color: var(--color-primary-dark); }
 
 .btn-secondary {
     background-color: transparent;
     color: var(--color-text);
     border: 1px solid #cbd5e1;
 }
+.btn-secondary:hover { background-color: var(--color-bg-light); }
 
-.btn-secondary:hover {
-    background-color: var(--color-bg-light);
-}
-
-.btn-white {
-    background-color: var(--color-white);
-    color: var(--color-primary);
-}
-
-.btn-white:hover {
-    background-color: #f1f5f9;
-}
+.btn-white { background-color: var(--color-white); color: var(--color-primary); }
+.btn-white:hover { background-color: #f1f5f9; }
 
 .btn-large {
     padding: 16px 32px;
@@ -194,41 +202,44 @@ body {
 }
 
 /* =========================================
-   6. Grids & Cards
+   7. Grids & Cards (Spacing Improvements)
    ========================================= */
 .grid-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 24px;
 }
 
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 32px;
 }
 
 .card {
     background: var(--color-bg);
-    padding: 30px;
+    padding: 32px; /* Increased padding for breathing room */
     border-radius: var(--border-radius);
     border: 1px solid #e2e8f0;
-    transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .card:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transform: translateY(-4px);
 }
 
 .card h3 {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     color: var(--color-primary);
+    font-size: 1.2rem;
 }
 
 .card p {
     color: var(--color-text-muted);
     margin-bottom: 20px;
     font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .text-link {
@@ -254,10 +265,21 @@ body {
 
 .feature p {
     color: var(--color-text-muted);
+    max-width: 300px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.support-text {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
 
 /* =========================================
-   7. Footer
+   8. Footer
    ========================================= */
 .site-footer {
     background-color: var(--color-bg-light);
@@ -273,7 +295,7 @@ body {
 }
 
 /* =========================================
-   8. Mobile Responsiveness
+   9. Mobile Responsiveness & Touch Targets
    ========================================= */
 @media (max-width: 768px) {
     .header-container {
@@ -284,9 +306,15 @@ body {
     }
 
     .main-nav ul {
-        gap: 15px;
+        gap: 10px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    /* Accessibility: Make links larger for finger tapping */
+    .main-nav a {
+        padding: 8px 6px; 
+        font-size: 0.9rem;
     }
 
     .hero-section {
@@ -297,16 +325,32 @@ body {
         font-size: 2.2rem;
     }
 
+    .hero-text {
+        font-size: 1.05rem;
+    }
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
 
     .grid-4, .grid-3 {
-        grid-template-columns: 1fr; /* Stack cards vertically on mobile */
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .section-title {
         font-size: 1.75rem;
+        margin-bottom: 30px;
+    }
+    
+    .section-padding {
+        padding: 60px 0; /* Slightly less padding on mobile */
     }
 }
