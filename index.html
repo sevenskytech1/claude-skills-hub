@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Claude Skills Hub - A free, open-source collection of Claude Skills examples, templates, guides, and tutorials.">
-    <meta name="keywords" content="Claude Skills, AI, prompts, templates, guides, tutorials, open source">
-    <title>Claude Skills Hub</title>
+    
+    <!-- SEO & Social Sharing Tags -->
+    <title>Claude Skills Hub - Free AI Skills & Templates</title>
+    <meta name="description" content="Claude Skills Hub is a free, open-source collection of Claude Skills examples, templates, guides, and tutorials to build better AI workflows.">
+    <meta name="keywords" content="Claude Skills, AI prompts, AI templates, AI guides, open source, Seven Sky Tech">
+    
+    <!-- Open Graph (Makes links look good when shared on Twitter, LinkedIn, etc.) -->
+    <meta property="og:title" content="Claude Skills Hub">
+    <meta property="og:description" content="Your free, open-source repository for Claude Skills examples, templates, guides, and tutorials.">
+    <meta property="og:type" content="website">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Accessibility: Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- 1. Header & 2. Navigation -->
     <header class="site-header">
         <div class="container header-container">
             <a href="/" class="logo">Claude Skills Hub</a>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Main Navigation">
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#categories">Categories</a></li>
@@ -26,12 +37,13 @@
         </div>
     </header>
 
-    <main>
+    <!-- Added id="main-content" for the skip link -->
+    <main id="main-content">
         <!-- 3. Hero Section -->
         <section id="hero" class="hero-section">
             <div class="container">
                 <h1>Master Claude Skills</h1>
-                <p>Your free, open-source repository for Claude Skills examples, templates, guides, and tutorials. Build better AI workflows today.</p>
+                <p class="hero-text">Your free, open-source repository for Claude Skills examples, templates, guides, and tutorials. Build better AI workflows today.</p>
                 <div class="hero-buttons">
                     <a href="#categories" class="btn btn-primary">Browse Resources</a>
                     <a href="https://github.com/your-username/claude-skills-hub" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on GitHub</a>
@@ -102,7 +114,7 @@
         <section id="support" class="section-padding">
             <div class="container text-center">
                 <h2 class="section-title">Support This Project</h2>
-                <p>Claude Skills Hub is maintained by the community. If you find this resource helpful, consider buying the maintainer a coffee to keep the project alive and growing!</p>
+                <p class="support-text">Claude Skills Hub is maintained by the community. If you find this resource helpful, consider buying the maintainer a coffee to keep the project alive and growing!</p>
                 <a href="https://sevensky.gumroad.com/coffee" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">☕ Buy Me a Coffee</a>
             </div>
         </section>
@@ -112,7 +124,7 @@
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 Claude Skills Hub. Released under the MIT License.</p>
-            <p>Made with ❤️ by the open-source community and <strong>Seven Sky Tech1</strong>.</p>
+            <p>Made with ❤️ by the open-source community and <strong>Seven Sky Tech</strong>.</p>
         </div>
     </footer>
 
