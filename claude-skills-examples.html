@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Social Sharing Tags -->
+    <title>Claude Skills Examples - Free Guide & Templates | Claude Skills Hub</title>
+    <meta name="description" content="Explore practical Claude Skills examples, installation guides, and prompt templates. Learn how to build better AI workflows with our free open-source guide.">
+    <meta name="keywords" content="Claude Skills Examples, AI prompts, Claude templates, SKILL.md, open source AI">
+    
+    <!-- Open Graph (For beautiful link previews on social media) -->
+    <meta property="og:title" content="Claude Skills Examples - Free Guide & Templates">
+    <meta property="og:description" content="Explore practical Claude Skills examples, installation guides, and prompt templates.">
+    <meta property="og:type" content="article">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tiny bit of extra styling just for the code block to make it look perfect -->
+    <style>
+        .code-block {
+            background-color: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            text-align: left;
+        }
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+        .toc-list li {
+            margin-bottom: 10px;
+        }
+        .toc-list a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .faq-item {
+            margin-bottom: 25px;
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--color-text);
+        }
+        .faq-item p {
+            color: var(--color-text-muted);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Accessibility: Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Claude Skills Hub</a>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#categories">Categories</a></li>
+                    <li><a href="index.html#why">Why Claude Skills?</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#support" class="nav-highlight">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <!-- Page Header -->
+        <section class="section-padding bg-light">
+            <div class="container text-center">
+                <h1 class="section-title">Claude Skills Examples</h1>
+                <p class="hero-text">A complete beginner-friendly guide to understanding, installing, and using Claude Skills in your daily workflow.</p>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted);">Last updated: July 2026</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container" style="max-width: 800px;"> <!-- Narrower width for better reading -->
+                
+                <!-- Introduction -->
+                <p style="margin-bottom: 30px; font-size: 1.05rem; line-height: 1.7;">
+                    Welcome to the ultimate guide for <strong>Claude Skills Examples</strong>. Whether you are automating data analysis, generating code, or summarizing documents, this page will walk you through everything you need to know to get started.
+                </p>
+
+                <!-- Table of Contents -->
+                <div class="card" style="margin-bottom: 40px;">
+                    <h3 style="margin-bottom: 15px;">📑 Table of Contents</h3>
+                    <ul class="toc-list">
+                        <li><a href="#what">1. What are Claude Skills?</a></li>
+                        <li><a href="#why">2. Why use Claude Skills?</a></li>
+                        <li><a href="#featured">3. Featured SKILL.md Example</a></li>
+                        <li><a href="#installation">4. Installation Guide</a></li>
+                        <li><a href="#prompts">5. Example Prompts</a></li>
+                        <li><a href="#faq">6. Frequently Asked Questions</a></li>
+                        <li><a href="#related">7. Related Pages</a></li>
+                    </ul>
+                </div>
+
+                <!-- What are Claude Skills? -->
+                <section id="what" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">What are Claude Skills?</h2>
+                    <p style="color: var(--color-text-muted); line-height: 1.7;">
+                        Claude Skills are predefined sets of instructions, tools, and contexts that you can give to Claude to help it perform specific tasks more effectively. Think of them as "superpowers" you can equip the AI with, allowing it to understand your unique workflow, formatting rules, or domain-specific knowledge without you having to repeat yourself in every prompt.
+                    </p>
+                </section>
+
+                <!-- Why use Claude Skills? -->
+                <section id="why" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Why use Claude Skills?</h2>
+                    <ul style="color: var(--color-text-muted); line-height: 1.7; padding-left: 20px;">
+                        <li style="margin-bottom: 10px;"><strong>Consistency:</strong> Get the same high-quality output format every time.</li>
+                        <li style="margin-bottom: 10px;"><strong>Time-Saving:</strong> Stop writing long, repetitive prompts from scratch.</li>
+                        <li style="margin-bottom: 10px;"><strong>Accuracy:</strong> Ground the AI in your specific rules, reducing hallucinations.</li>
+                    </ul>
+                </section>
+
+                <!-- Featured SKILL.md -->
+                <section id="featured" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Featured SKILL.md Example</h2>
+                    <p style="color: var(--color-text-muted); margin-bottom: 15px; line-height: 1.7;">
+                        Below is a practical example of a <code>SKILL.md</code> file. This specific skill teaches Claude how to act as a "Code Reviewer" with specific formatting rules.
+                    </p>
+                    <div class="code-block">
+# Skill: Code Reviewer
+
+## Description
+Provides structured, constructive, and secure code reviews for Python and JavaScript projects.
+
+## Instructions
+1. Analyze the provided code for bugs, security vulnerabilities, and performance issues.
+2. Always start with a brief summary of the code's purpose.
+3. Use a "Praise, Improve, Suggest" framework for feedback.
+4. Format output using Markdown tables for severity levels (Critical, Warning, Info).
+
+## Constraints
+- Do not rewrite the entire codeblock unless explicitly asked.
+- Keep explanations concise and actionable.
+                    </div>
+                </section>
+
+                <!-- Installation -->
+                <section id="installation" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Installation</h2>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 15px;">
+                        Adding a skill to your workflow is simple. Follow these steps:
+                    </p>
+                    <ol style="color: var(--color-text-muted); line-height: 1.7; padding-left: 20px;">
+                        <li style="margin-bottom: 10px;">Create a new folder in your project directory named <code>.claude/skills/</code>.</li>
+                        <li style="margin-bottom: 10px;">Inside that folder, create a file named <code>SKILL.md</code> (or a descriptive name like <code>code-reviewer.md</code>).</li>
+                        <li style="margin-bottom: 10px;">Paste your skill instructions (like the example above) into the file.</li>
+                        <li style="margin-bottom: 10px;">Reference the skill in your prompt by saying: <em>"Use the Code Reviewer skill to analyze this..."</em></li>
+                    </ol>
+                </section>
+
+                <!-- Example Prompts -->
+                <section id="prompts" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Example Prompts</h2>
+                    <div class="card" style="margin-bottom: 15px; background-color: var(--color-bg-light); border-left: 4px solid var(--color-primary);">
+                        <p style="font-style: italic; color: var(--color-text);">"Apply the Code Reviewer skill to this Python script and highlight any security vulnerabilities."</p>
+                    </div>
+                    <div class="card" style="background-color: var(--color-bg-light); border-left: 4px solid var(--color-primary);">
+                        <p style="font-style: italic; color: var(--color-text);">"Using the Data Formatter skill, convert this messy text list into a clean CSV table."</p>
+                    </div>
+                </section>
+
+                <!-- FAQ -->
+                <section id="faq" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 25px;">Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Do I need to pay to use Claude Skills?</h3>
+                        <p>No! The concept of Skills is just structured prompting. You can use them with any version of Claude, including the free tier.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Can I share my custom skills with others?</h3>
+                        <p>Absolutely. That is the main purpose of this hub! You can share your <code>SKILL.md</code> files on GitHub or submit them to our repository.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What is the difference between a Skill and a normal prompt?</h3>
+                        <p>A normal prompt is a one-time request. A Skill is a reusable, saved set of rules that you can call upon anytime, ensuring consistent results.</p>
+                    </div>
+                </section>
+
+                <!-- Related Pages -->
+                <section id="related" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Related Pages</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;">📄 <a href="index.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Browse all Categories (Templates, Guides, Tutorials)</a></li>
+                        <li style="margin-bottom: 10px;">🤝 <a href="about.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Learn about our Open-Source Mission</a></li>
+                    </ul>
+                </section>
+
+            </div>
+        </section>
+
+        <!-- Support This Project -->
+        <section id="support" class="section-padding bg-light">
+            <div class="container text-center">
+                <h2 class="section-title">Support This Project</h2>
+                <p class="support-text">Claude Skills Hub is maintained by the community. If this guide helped you, consider buying the maintainer a coffee to keep the project alive, ad-free, and growing!</p>
+                <a href="https://sevensky.gumroad.com/coffee" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">☕ Buy Me a Coffee</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Claude Skills Hub. Released under the MIT License.</p>
+            <p>Made with ❤️ by the open-source community and <strong>Seven Sky Tech</strong>.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
