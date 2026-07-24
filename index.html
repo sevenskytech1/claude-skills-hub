@@ -3,22 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO & Social Sharing Tags -->
-    <title>Claude Skills Hub - Free AI Skills & Templates</title>
-    <meta name="description" content="Claude Skills Hub is a free, open-source collection of Claude Skills examples, templates, guides, and tutorials to build better AI workflows.">
-    <meta name="keywords" content="Claude Skills, AI prompts, AI templates, AI guides, open source, Seven Sky Tech">
-    
-    <!-- Open Graph (Makes links look good when shared on Twitter, LinkedIn, etc.) -->
-    <meta property="og:title" content="Claude Skills Hub">
-    <meta property="og:description" content="Your free, open-source repository for Claude Skills examples, templates, guides, and tutorials.">
-    <meta property="og:type" content="website">
-    
+    <meta name="description" content="Claude Skills Hub - A free, open-source collection of Claude Agent Skills examples, SKILL.md templates, guides, and tutorials.">
+    <meta name="keywords" content="Claude Skills, SKILL.md, AI prompts, AI templates, open source, Seven Sky Tech">
+    <title>Claude Skills Hub - Free SKILL.md Templates & Guides</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Accessibility: Skip to main content link for keyboard users -->
+    <!-- Accessibility: Skip to main content link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- 1. Header & 2. Navigation -->
@@ -30,32 +22,61 @@
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#categories">Categories</a></li>
                     <li><a href="#why">Why Claude Skills?</a></li>
-                    <li><a href="#opensource">Open Source</a></li>
+                    <li><a href="about.html">Open Source</a></li>
                     <li><a href="#support" class="nav-highlight">Support</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Added id="main-content" for the skip link -->
     <main id="main-content">
         <!-- 3. Hero Section -->
         <section id="hero" class="hero-section">
             <div class="container">
                 <h1>Master Claude Skills</h1>
-                <p class="hero-text">Your free, open-source repository for Claude Skills examples, templates, guides, and tutorials. Build better AI workflows today.</p>
+                <p class="hero-text">Your free, open-source repository for Claude Agent Skills examples, SKILL.md templates, and tutorials. Build better AI workflows today.</p>
                 <div class="hero-buttons">
-                    <a href="#categories" class="btn btn-primary">Browse Resources</a>
-                    <a href="https://github.com/your-username/claude-skills-hub" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on GitHub</a>
+                    <a href="#categories" class="btn btn-primary">Browse Skills</a>
+                    <a href="https://github.com/sevenskytech1/claude-skills-hub" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on GitHub</a>
                 </div>
             </div>
         </section>
 
-                <!-- 4. Browse Categories -->
-        <section id="categories" class="section-padding bg-light">
+        <!-- NEW: How It Works (Quickstart) -->
+        <section class="section-padding bg-light">
+            <div class="container text-center">
+                <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 30px;">How Claude Skills Work</h2>
+                <div class="grid-3">
+                    <div class="card" style="border: none; background: transparent; box-shadow: none; padding: 20px;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">📁</div>
+                        <h3 style="color: var(--color-text); margin-bottom: 10px;">1. Copy SKILL.md</h3>
+                        <p>Pick a pre-built template from our collection.</p>
+                    </div>
+                    <div class="card" style="border: none; background: transparent; box-shadow: none; padding: 20px;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">⚙️</div>
+                        <h3 style="color: var(--color-text); margin-bottom: 10px;">2. Load into Claude</h3>
+                        <p>Place the folder in your workspace or Claude Code.</p>
+                    </div>
+                    <div class="card" style="border: none; background: transparent; box-shadow: none; padding: 20px;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">⚡</div>
+                        <h3 style="color: var(--color-text); margin-bottom: 10px;">3. Automate Workflows</h3>
+                        <p>Claude automatically loads context when triggered.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Browse Categories (With Search & Sharpened Descriptions) -->
+        <section id="categories" class="section-padding">
             <div class="container">
                 <h2 class="section-title">Browse Categories</h2>
-                <div class="grid-3">
+                
+                <!-- Lightweight Search Bar -->
+                <div style="max-width: 500px; margin: 0 auto 40px auto;">
+                    <input type="text" id="skillSearch" placeholder="Search skills (e.g., React, n8n, testing)..." style="width: 100%; padding: 14px 20px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 1rem; font-family: inherit; outline: none; transition: border-color 0.2s;">
+                </div>
+
+                <div class="grid-3" id="categoryGrid">
                     <div class="card card-blue">
                         <h3>Claude Skills Marketplace</h3>
                         <p>Discover, share, and download community-driven AI skills and templates.</p>
@@ -63,49 +84,50 @@
                     </div>
                     <div class="card card-blue">
                         <h3>Claude Skills for Coding</h3>
-                        <p>Automate code generation, debugging, and refactoring workflows.</p>
+                        <p>Automate unit testing, debugging, and code refactoring workflows.</p>
                         <a href="claude-skills-for-coding.html" class="text-link">Explore Coding &rarr;</a>
                     </div>
                     <div class="card card-blue">
                         <h3>Claude Skills for Developers</h3>
-                        <p>Advanced workflows for software engineering and system architecture.</p>
+                        <p>Advanced DevOps, system architecture, and API integration workflows.</p>
                         <a href="claude-skills-for-developers.html" class="text-link">Explore Developers &rarr;</a>
                     </div>
                     <div class="card card-blue">
                         <h3>Claude Skills for Research</h3>
-                        <p>Streamline data analysis, literature reviews, and fact-checking.</p>
+                        <p>Streamline data analysis, literature reviews, and academic fact-checking.</p>
                         <a href="claude-skills-for-research.html" class="text-link">Explore Research &rarr;</a>
                     </div>
                     <div class="card card-blue">
                         <h3>Claude Skills for Writing</h3>
-                        <p>Enhance copywriting, editing, and content creation processes.</p>
+                        <p>Enhance copywriting, technical documentation, and content creation.</p>
                         <a href="claude-skills-for-writing.html" class="text-link">Explore Writing &rarr;</a>
                     </div>
                     <div class="card card-blue">
                         <h3>Claude Skills for Design</h3>
-                        <p>Generate design systems, UI/UX feedback, and creative assets.</p>
+                        <p>Generate design systems, UI/UX feedback, and creative asset prompts.</p>
                         <a href="claude-skills-for-design.html" class="text-link">Explore Design &rarr;</a>
                     </div>
                     <div class="card card-blue">
                         <h3>Claude Skills for n8n</h3>
-                        <p>Build powerful no-code automation workflows and integrations.</p>
+                        <p>Build powerful no-code automation workflows and MCP integrations.</p>
                         <a href="claude-skills-for-n8n.html" class="text-link">Explore n8n &rarr;</a>
                     </div>
                     <div class="card card-blue">
                         <h3>Claude Skills for Front-End Design</h3>
-                        <p>Master HTML, CSS, and modern UI component generation.</p>
+                        <p>Master React, Tailwind CSS, and modern UI component generation.</p>
                         <a href="claude-skills-for-front-end-design.html" class="text-link">Explore Front-End &rarr;</a>
                     </div>
                     <div class="card card-blue">
                         <h3>Claude Skills for Web Development</h3>
-                        <p>End-to-end web development guides, from setup to deployment.</p>
+                        <p>End-to-end full-stack development guides, from setup to deployment.</p>
                         <a href="claude-skills-for-web-development.html" class="text-link">Explore Web Dev &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- 5. Why Claude Skills? -->
-        <section id="why" class="section-padding">
+        <section id="why" class="section-padding bg-light">
             <div class="container">
                 <h2 class="section-title">Why Claude Skills?</h2>
                 <div class="grid-3">
@@ -130,7 +152,7 @@
             <div class="container text-center">
                 <h2 class="section-title text-white">Built in the Open</h2>
                 <p class="text-white-muted">This project is 100% free and open source. We believe in the power of community-driven knowledge. Contribute your own skills, fix typos, or suggest new features.</p>
-                <a href="https://github.com/your-username/claude-skills-hub" target="_blank" rel="noopener noreferrer" class="btn btn-white">Contribute on GitHub</a>
+                <a href="https://github.com/sevenskytech1/claude-skills-hub" target="_blank" rel="noopener noreferrer" class="btn btn-white">Contribute on GitHub</a>
             </div>
         </section>
 
@@ -151,6 +173,34 @@
             <p>Made with ❤️ by the open-source community and <strong>Seven Sky Tech</strong>.</p>
         </div>
     </footer>
+
+    <!-- Simple, lightweight search filter (No frameworks needed!) -->
+    <script>
+        document.getElementById('skillSearch').addEventListener('keyup', function() {
+            let filter = this.value.toLowerCase();
+            let cards = document.querySelectorAll('.card-blue');
+            
+            cards.forEach(function(card) {
+                let text = card.textContent.toLowerCase();
+                if (text.includes(filter)) {
+                    card.style.display = ""; // Show matching cards
+                } else {
+                    card.style.display = "none"; // Hide non-matching cards
+                }
+            });
+        });
+
+        // Add focus styling to search bar via JS to keep CSS clean
+        let searchInput = document.getElementById('skillSearch');
+        searchInput.addEventListener('focus', function() {
+            this.style.borderColor = 'var(--color-primary)';
+            this.style.boxShadow = '0 0 0 3px rgba(37, 99, 235, 0.1)';
+        });
+        searchInput.addEventListener('blur', function() {
+            this.style.borderColor = '#cbd5e1';
+            this.style.boxShadow = 'none';
+        });
+    </script>
 
 </body>
 </html>
