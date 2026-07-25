@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Social Sharing Tags -->
+    <title>Claude Skills for Web Development - Full-Stack & Deployment | Claude Skills Hub</title>
+    <meta name="description" content="Master Claude Skills for Web Development. Learn to build full-stack apps, design databases, and deploy to production with free open-source SKILL.md templates.">
+    <meta name="keywords" content="Claude Skills for Web Development, full-stack AI, web deployment, database design, authentication, SKILL.md, Next.js AI">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Claude Skills for Web Development - Full-Stack & Deployment">
+    <meta property="og:description" content="Learn to build full-stack apps, design databases, and deploy to production with free open-source SKILL.md templates.">
+    <meta property="og:type" content="article">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Page-specific styling -->
+    <style>
+        .code-block {
+            background-color: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            text-align: left;
+            white-space: pre-wrap;
+        }
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+        .toc-list li {
+            margin-bottom: 10px;
+        }
+        .toc-list a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .faq-item {
+            margin-bottom: 25px;
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--color-text);
+        }
+        .faq-item p {
+            color: var(--color-text-muted);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Accessibility: Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Claude Skills Hub</a>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#categories">Categories</a></li>
+                    <li><a href="index.html#why">Why Claude Skills?</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#support" class="nav-highlight">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <!-- Page Header -->
+        <section class="section-padding bg-light">
+            <div class="container text-center">
+                <h1 class="section-title">Claude Skills for Web Development</h1>
+                <p class="hero-text">The ultimate guide for full-stack engineers to build end-to-end web applications, design databases, and deploy production-ready projects.</p>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted);">Last updated: July 2026</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container" style="max-width: 800px;">
+                
+                <!-- Introduction -->
+                <p style="margin-bottom: 30px; font-size: 1.05rem; line-height: 1.7;">
+                    Welcome to the guide for <strong>Claude Skills for Web Development</strong>. While front-end skills handle UI components and developer skills focus on APIs, web development skills equip Claude to act as a full-stack architect. Use these templates to scaffold complete applications, design database schemas, implement authentication, and deploy to production with confidence.
+                </p>
+
+                <!-- Table of Contents -->
+                <div class="card" style="margin-bottom: 40px;">
+                    <h3 style="margin-bottom: 15px;">📑 Table of Contents</h3>
+                    <ul class="toc-list">
+                        <li><a href="#what">1. What are Claude Skills?</a></li>
+                        <li><a href="#why">2. Why use Skills for Web Development?</a></li>
+                        <li><a href="#featured">3. Practical SKILL.md Example</a></li>
+                        <li><a href="#installation">4. Installation Guide</a></li>
+                        <li><a href="#prompts">5. Example Prompts</a></li>
+                        <li><a href="#faq">6. Frequently Asked Questions</a></li>
+                        <li><a href="#related">7. Related Pages</a></li>
+                    </ul>
+                </div>
+
+                <!-- What are Claude Skills? -->
+                <section id="what" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">What are Claude Skills?</h2>
+                    <p style="color: var(--color-text-muted); line-height: 1.7;">
+                        Claude Skills are predefined sets of instructions, tools, and contexts that you can give to Claude. For web development, this means defining your preferred tech stack (Next.js, Django, Laravel), database choices (PostgreSQL, MongoDB), and deployment targets (Vercel, AWS, Docker) so the AI builds complete, production-ready applications that follow your team's standards.
+                    </p>
+                </section>
+
+                <!-- Why use this category? -->
+                <section id="why" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Why use Skills for Web Development?</h2>
+                    <ul style="color: var(--color-text-muted); line-height: 1.7; padding-left: 20px;">
+                        <li style="margin-bottom: 10px;"><strong>Full-Stack Scaffolding:</strong> Instantly generate project structures with frontend, backend, database, and configuration files all wired together.</li>
+                        <li style="margin-bottom: 10px;"><strong>Database Design:</strong> Create optimized schemas, migrations, and ORM models with proper relationships and indexing.</li>
+                        <li style="margin-bottom: 10px;"><strong>Production Deployment:</strong> Write Dockerfiles, CI/CD pipelines, and environment configurations for seamless deployment to any platform.</li>
+                    </ul>
+                </section>
+
+                <!-- Practical SKILL.md Example -->
+                <section id="featured" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Practical SKILL.md Example</h2>
+                    <p style="color: var(--color-text-muted); margin-bottom: 15px; line-height: 1.7;">
+                        Below is a powerful skill for full-stack web development. It ensures Claude builds complete applications with proper architecture, security, and deployment readiness.
+                    </p>
+                    <div class="code-block">
+# Skill: Full-Stack Web Application Architect
+
+## Description
+Assists developers in building end-to-end web applications, including project scaffolding, database design, authentication, and production deployment.
+
+## Instructions
+1. When asked to build a new app, suggest a complete tech stack (frontend framework, backend, database, hosting).
+2. Generate project folder structures with clear separation of concerns (e.g., /components, /api, /models, /utils).
+3. Design database schemas with proper relationships, indexes, and migrations.
+4. Implement secure authentication (JWT, OAuth, or session-based) with password hashing and rate limiting.
+5. Write Dockerfiles and docker-compose.yml for local development and production.
+6. Create CI/CD pipelines (GitHub Actions) for automated testing and deployment.
+
+## Constraints
+- NEVER store secrets in code; always use environment variables (.env files).
+- Ensure all API endpoints have proper validation and error handling.
+- Use parameterized queries to prevent SQL injection.
+- Include README.md with setup instructions, environment variables, and deployment steps.
+- Prefer modern, maintained libraries and follow framework best practices.
+                    </div>
+                </section>
+
+                <!-- Installation -->
+                <section id="installation" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Installation Guide</h2>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 15px;">
+                        Set up this web development skill in your project in three simple steps:
+                    </p>
+                    <ol style="color: var(--color-text-muted); line-height: 1.7; padding-left: 20px;">
+                        <li style="margin-bottom: 10px;">Create a folder in your project root named <code>.claude/skills/</code>.</li>
+                        <li style="margin-bottom: 10px;">Create a file named <code>fullstack-architect.md</code> and paste the code from the example above.</li>
+                        <li style="margin-bottom: 10px;">When starting a new project, simply say: <em>"Use the Full-Stack Architect skill to scaffold a Next.js + PostgreSQL application with authentication..."</em></li>
+                    </ol>
+                </section>
+
+                <!-- Example Prompts -->
+                <section id="prompts" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Example Prompts</h2>
+                    <div class="card" style="margin-bottom: 15px; background-color: var(--color-bg-light); border-left: 4px solid var(--color-primary);">
+                        <p style="font-style: italic; color: var(--color-text);">"Activate the Full-Stack Architect skill. I need to build a SaaS application with user authentication, a dashboard, and Stripe billing. Suggest the tech stack and generate the project structure with database schema."</p>
+                    </div>
+                    <div class="card" style="background-color: var(--color-bg-light); border-left: 4px solid var(--color-primary);">
+                        <p style="font-style: italic; color: var(--color-text);">"Using the Web Development skill, write a Dockerfile and docker-compose.yml for a Node.js + PostgreSQL application. Include environment variables and a production-ready configuration."</p>
+                    </div>
+                </section>
+
+                <!-- FAQ -->
+                <section id="faq" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 25px;">Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3>How is this different from "Front-End Design" or "Developers" skills?</h3>
+                        <p>Front-End Design focuses on UI components and styling (React, Tailwind). Developers skills focus on APIs, DevOps, and system architecture. Web Development skills cover the <em>entire stack</em>: frontend + backend + database + deployment, all working together as a complete application.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Which frameworks does this work with?</h3>
+                        <p>This skill is framework-agnostic. You can specify Next.js, Remix, Django, Laravel, Ruby on Rails, or any other full-stack framework in your skill instructions. The core principles of database design, authentication, and deployment apply universally.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Can Claude deploy my application for me?</h3>
+                        <p>Claude can write all the deployment scripts (Dockerfiles, CI/CD pipelines, Terraform configs), but you must execute them on your own infrastructure or hosting platform. Claude does not have direct access to deploy to Vercel, AWS, or other services.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Does this handle database migrations?</h3>
+                        <p>Yes! The skill can generate migration files for Prisma, Drizzle, Django ORM, SQLAlchemy, or any other ORM. Just specify your database and ORM in the skill instructions.</p>
+                    </div>
+                </section>
+
+                <!-- Related Pages -->
+                <section id="related" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Related Pages</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;">💻 <a href="claude-skills-for-front-end-design.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Explore Front-End Design & React/Tailwind Skills</a></li>
+                        <li style="margin-bottom: 10px;">🛠️ <a href="claude-skills-for-developers.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">View DevOps & API Integration Skills</a></li>
+                        <li style="margin-bottom: 10px;">🛒 <a href="claude-skills-marketplace.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Browse the Skills Marketplace</a></li>
+                    </ul>
+                </section>
+
+            </div>
+        </section>
+
+        <!-- Support This Project -->
+        <section id="support" class="section-padding bg-light">
+            <div class="container text-center">
+                <h2 class="section-title">Support This Project</h2>
+                <p class="support-text">Claude Skills Hub is maintained by the community. If this web development guide helped you ship faster, consider buying the maintainer a coffee!</p>
+                <a href="https://sevensky.gumroad.com/coffee" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">☕ Buy Me a Coffee</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Claude Skills Hub. Released under the MIT License.</p>
+            <p>Made with ❤️ by the open-source community and <strong>Seven Sky Tech</strong>.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
