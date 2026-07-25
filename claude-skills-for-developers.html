@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Social Sharing Tags -->
+    <title>Claude Skills for Developers - DevOps, APIs & Architecture | Claude Skills Hub</title>
+    <meta name="description" content="Master Claude Skills for Developers. Learn to automate DevOps, design system architecture, and integrate APIs seamlessly with our open-source SKILL.md templates.">
+    <meta name="keywords" content="Claude Skills for Developers, DevOps AI, API integration, system architecture, SKILL.md, Model Context Protocol">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Claude Skills for Developers - DevOps, APIs & Architecture">
+    <meta property="og:description" content="Learn to automate DevOps, design system architecture, and integrate APIs seamlessly with open-source SKILL.md templates.">
+    <meta property="og:type" content="article">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Page-specific styling -->
+    <style>
+        .code-block {
+            background-color: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            text-align: left;
+            white-space: pre-wrap;
+        }
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+        .toc-list li {
+            margin-bottom: 10px;
+        }
+        .toc-list a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .faq-item {
+            margin-bottom: 25px;
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--color-text);
+        }
+        .faq-item p {
+            color: var(--color-text-muted);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Accessibility: Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Claude Skills Hub</a>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#categories">Categories</a></li>
+                    <li><a href="index.html#why">Why Claude Skills?</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#support" class="nav-highlight">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <!-- Page Header -->
+        <section class="section-padding bg-light">
+            <div class="container text-center">
+                <h1 class="section-title">Claude Skills for Developers</h1>
+                <p class="hero-text">The ultimate guide for software engineers to automate DevOps, design system architecture, and build robust API integrations.</p>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted);">Last updated: July 2026</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container" style="max-width: 800px;">
+                
+                <!-- Introduction -->
+                <p style="margin-bottom: 30px; font-size: 1.05rem; line-height: 1.7;">
+                    Welcome to the guide for <strong>Claude Skills for Developers</strong>. While basic coding skills handle syntax and debugging, developer-level skills equip Claude to act as a senior engineer. Use these templates to design scalable architectures, write Infrastructure as Code (IaC), and integrate complex APIs securely.
+                </p>
+
+                <!-- Table of Contents -->
+                <div class="card" style="margin-bottom: 40px;">
+                    <h3 style="margin-bottom: 15px;">📑 Table of Contents</h3>
+                    <ul class="toc-list">
+                        <li><a href="#what">1. What are Claude Skills?</a></li>
+                        <li><a href="#why">2. Why use Skills for Developers?</a></li>
+                        <li><a href="#featured">3. Practical SKILL.md Example</a></li>
+                        <li><a href="#installation">4. Installation Guide</a></li>
+                        <li><a href="#prompts">5. Example Prompts</a></li>
+                        <li><a href="#faq">6. Frequently Asked Questions</a></li>
+                        <li><a href="#related">7. Related Pages</a></li>
+                    </ul>
+                </div>
+
+                <!-- What are Claude Skills? -->
+                <section id="what" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">What are Claude Skills?</h2>
+                    <p style="color: var(--color-text-muted); line-height: 1.7;">
+                        Claude Skills are predefined sets of instructions, tools, and contexts that you can give to Claude. For developers, this means defining your team's architecture patterns, preferred cloud providers, and security standards so the AI generates production-ready solutions, not just toy examples.
+                    </p>
+                </section>
+
+                <!-- Why use this category? -->
+                <section id="why" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Why use Skills for Developers?</h2>
+                    <ul style="color: var(--color-text-muted); line-height: 1.7; padding-left: 20px;">
+                        <li style="margin-bottom: 10px;"><strong>Architectural Consistency:</strong> Ensure AI suggestions align with your microservices or monolith patterns.</li>
+                        <li style="margin-bottom: 10px;"><strong>Secure by Default:</strong> Bake security rules (like secret management and CORS policies) directly into the AI's workflow.</li>
+                        <li style="margin-bottom: 10px;"><strong>DevOps Automation:</strong> Rapidly generate GitHub Actions, Dockerfiles, or Terraform scripts tailored to your stack.</li>
+                    </ul>
+                </section>
+
+                <!-- Practical SKILL.md Example -->
+                <section id="featured" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Practical SKILL.md Example</h2>
+                    <p style="color: var(--color-text-muted); margin-bottom: 15px; line-height: 1.7;">
+                        Below is a powerful skill for API and DevOps assistance. It ensures Claude prioritizes security, modern libraries, and clear infrastructure explanations.
+                    </p>
+                    <div class="code-block">
+# Skill: API & DevOps Assistant
+
+## Description
+Assists developers in designing secure API integrations, writing infrastructure-as-code (IaC), and troubleshooting CI/CD pipelines.
+
+## Instructions
+1. When given an API specification, generate secure, typed client code (e.g., TypeScript/Python) with error handling and retries.
+2. When asked about deployment, suggest best practices for Docker, GitHub Actions, or cloud providers (AWS/GCP).
+3. Always highlight security considerations (e.g., secret management, rate limiting, CORS).
+4. Format infrastructure code blocks clearly with comments explaining each step.
+
+## Constraints
+- NEVER hardcode API keys or secrets in generated code; always use environment variables (e.g., process.env).
+- Prefer modern, maintained libraries (e.g., native fetch, axios, boto3).
+- Keep explanations concise and focused on architectural trade-offs.
+                    </div>
+                </section>
+
+                <!-- Installation -->
+                <section id="installation" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Installation Guide</h2>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 15px;">
+                        Set up this developer skill in your project in three simple steps:
+                    </p>
+                    <ol style="color: var(--color-text-muted); line-height: 1.7; padding-left: 20px;">
+                        <li style="margin-bottom: 10px;">Create a folder in your project root named <code>.claude/skills/</code>.</li>
+                        <li style="margin-bottom: 10px;">Create a file named <code>api-devops-assistant.md</code> and paste the code from the example above.</li>
+                        <li style="margin-bottom: 10px;">When designing a new feature, simply say: <em>"Use the API & DevOps Assistant skill to design the integration for this new endpoint..."</em></li>
+                    </ol>
+                </section>
+
+                <!-- Example Prompts -->
+                <section id="prompts" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Example Prompts</h2>
+                    <div class="card" style="margin-bottom: 15px; background-color: var(--color-bg-light); border-left: 4px solid var(--color-primary);">
+                        <p style="font-style: italic; color: var(--color-text);">"Activate the API & DevOps Assistant skill. I need to integrate the Stripe API into our Node.js backend. Provide a secure client implementation and suggest a GitHub Actions workflow for testing it."</p>
+                    </div>
+                    <div class="card" style="background-color: var(--color-bg-light); border-left: 4px solid var(--color-primary);">
+                        <p style="font-style: italic; color: var(--color-text);">"Using the API & DevOps Assistant skill, review this Terraform script for our AWS S3 bucket and highlight any security or IAM permission improvements."</p>
+                    </div>
+                </section>
+
+                <!-- FAQ -->
+                <section id="faq" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 25px;">Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3>How is this different from the "Coding" skills?</h3>
+                        <p>The "Coding" skills focus on syntax, unit tests, and debugging individual functions. "Developer" skills focus on the bigger picture: system design, infrastructure, security, and how different services connect.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Can Claude Skills interact with my local terminal?</h3>
+                        <p>Yes! If you are using the Claude Code CLI or a supported IDE extension with tool use enabled, skills can be instructed to read local files, run read-only terminal commands, or suggest exact terminal commands for you to execute.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What is MCP and how does it relate to Skills?</h3>
+                        <p>Model Context Protocol (MCP) allows Claude to connect to external data sources. You can write a Skill that specifically instructs Claude on how to use an MCP server (like a database or GitHub connector) to fetch real-time data before answering.</p>
+                    </div>
+                </section>
+
+                <!-- Related Pages -->
+                <section id="related" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Related Pages</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;">💻 <a href="claude-skills-for-coding.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">View Basic Coding & Testing Skills</a></li>
+                        <li style="margin-bottom: 10px;">🌐 <a href="claude-skills-for-web-development.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Explore Full-Stack Web Development</a></li>
+                        <li style="margin-bottom: 10px;">🛒 <a href="claude-skills-marketplace.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Browse the Skills Marketplace</a></li>
+                    </ul>
+                </section>
+
+            </div>
+        </section>
+
+        <!-- Support This Project -->
+        <section id="support" class="section-padding bg-light">
+            <div class="container text-center">
+                <h2 class="section-title">Support This Project</h2>
+                <p class="support-text">Claude Skills Hub is maintained by the community. If this developer guide helped you ship faster, consider buying the maintainer a coffee!</p>
+                <a href="https://sevensky.gumroad.com/coffee" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">☕ Buy Me a Coffee</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Claude Skills Hub. Released under the MIT License.</p>
+            <p>Made with ❤️ by the open-source community and <strong>Seven Sky Tech</strong>.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
