@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Social Sharing Tags -->
+    <title>Claude Skills for Research - Literature Reviews & Data Analysis | Claude Skills Hub</title>
+    <meta name="description" content="Master Claude Skills for Research. Learn to automate literature reviews, synthesize data, and fact-check with our free open-source SKILL.md templates.">
+    <meta name="keywords" content="Claude Skills for Research, AI for researchers, literature review, data synthesis, academic AI, SKILL.md">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Claude Skills for Research - Literature Reviews & Data Analysis">
+    <meta property="og:description" content="Learn to automate literature reviews, synthesize data, and fact-check with free open-source SKILL.md templates.">
+    <meta property="og:type" content="article">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Page-specific styling -->
+    <style>
+        .code-block {
+            background-color: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            text-align: left;
+            white-space: pre-wrap;
+        }
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+        .toc-list li {
+            margin-bottom: 10px;
+        }
+        .toc-list a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .faq-item {
+            margin-bottom: 25px;
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--color-text);
+        }
+        .faq-item p {
+            color: var(--color-text-muted);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Accessibility: Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Claude Skills Hub</a>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#categories">Categories</a></li>
+                    <li><a href="index.html#why">Why Claude Skills?</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#support" class="nav-highlight">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <!-- Page Header -->
+        <section class="section-padding bg-light">
+            <div class="container text-center">
+                <h1 class="section-title">Claude Skills for Research</h1>
+                <p class="hero-text">The ultimate guide for academics, analysts, and students to automate literature reviews, synthesize complex data, and streamline fact-checking.</p>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted);">Last updated: July 2026</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container" style="max-width: 800px;">
+                
+                <!-- Introduction -->
+                <p style="margin-bottom: 30px; font-size: 1.05rem; line-height: 1.7;">
+                    Welcome to the guide for <strong>Claude Skills for Research</strong>. Whether you are conducting a systematic literature review, analyzing qualitative data, or verifying complex claims, this page shows you how to equip Claude with the academic rigor and structured output formats required for high-level research.
+                </p>
+
+                <!-- Table of Contents -->
+                <div class="card" style="margin-bottom: 40px;">
+                    <h3 style="margin-bottom: 15px;">📑 Table of Contents</h3>
+                    <ul class="toc-list">
+                        <li><a href="#what">1. What are Claude Skills?</a></li>
+                        <li><a href="#why">2. Why use Skills for Research?</a></li>
+                        <li><a href="#featured">3. Practical SKILL.md Example</a></li>
+                        <li><a href="#installation">4. Installation Guide</a></li>
+                        <li><a href="#prompts">5. Example Prompts</a></li>
+                        <li><a href="#faq">6. Frequently Asked Questions</a></li>
+                        <li><a href="#related">7. Related Pages</a></li>
+                    </ul>
+                </div>
+
+                <!-- What are Claude Skills? -->
+                <section id="what" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">What are Claude Skills?</h2>
+                    <p style="color: var(--color-text-muted); line-height: 1.7;">
+                        Claude Skills are predefined sets of instructions, tools, and contexts that you can give to Claude. For researchers, this means defining your preferred citation styles, data extraction rules, and analytical frameworks so the AI processes information with the precision and objectivity required for academic and professional work.
+                    </p>
+                </section>
+
+                <!-- Why use this category? -->
+                <section id="why" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Why use Skills for Research?</h2>
+                    <ul style="color: var(--color-text-muted); line-height: 1.7; padding-left: 20px;">
+                        <li style="margin-bottom: 10px;"><strong>Accelerate Literature Reviews:</strong> Instantly extract methodologies, key findings, and limitations from dense academic papers.</li>
+                        <li style="margin-bottom: 10px;"><strong>Structured Data Synthesis:</strong> Automatically format qualitative notes or quantitative datasets into clean Markdown tables.</li>
+                        <li style="margin-bottom: 10px;"><strong>Reduce Hallucinations:</strong> Strict constraints in your SKILL.md ensure the AI only uses provided sources and flags uncertainties.</li>
+                    </ul>
+                </section>
+
+                <!-- Practical SKILL.md Example -->
+                <section id="featured" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Practical SKILL.md Example</h2>
+                    <p style="color: var(--color-text-muted); margin-bottom: 15px; line-height: 1.7;">
+                        Below is a powerful skill for academic and analytical work. It ensures Claude maintains an objective tone, extracts data accurately, and formats citations perfectly.
+                    </p>
+                    <div class="code-block">
+# Skill: Literature Review & Data Synthesizer
+
+## Description
+Assists researchers in summarizing academic papers, extracting key quantitative/qualitative data, and synthesizing findings across multiple sources with strict adherence to provided texts.
+
+## Instructions
+1. Analyze the provided text/papers for methodology, key findings, sample size, and limitations.
+2. Extract quantitative data and format it into clean Markdown tables.
+3. Synthesize findings across multiple sources, explicitly highlighting areas of consensus and contradiction.
+4. Generate citations in the requested format (default to APA 7th edition if not specified).
+
+## Constraints
+- NEVER hallucinate data, statistics, or citations not present in the provided text.
+- Clearly distinguish between the original author's claims and general scientific consensus.
+- Maintain a strictly objective, academic tone.
+- If information is missing from the source text, state "Data not provided" rather than guessing.
+                    </div>
+                </section>
+
+                <!-- Installation -->
+                <section id="installation" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Installation Guide</h2>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 15px;">
+                        Set up this research skill in your project or workspace in three simple steps:
+                    </p>
+                    <ol style="color: var(--color-text-muted); line-height: 1.7; padding-left: 20px;">
+                        <li style="margin-bottom: 10px;">Create a folder in your project root named <code>.claude/skills/</code> (or keep it in your personal notes folder).</li>
+                        <li style="margin-bottom: 10px;">Create a file named <code>literature-review.md</code> and paste the code from the example above.</li>
+                        <li style="margin-bottom: 10px;">When analyzing a paper, simply say: <em>"Use the Literature Review skill to summarize this abstract and extract the core methodology..."</em></li>
+                    </ol>
+                </section>
+
+                <!-- Example Prompts -->
+                <section id="prompts" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Example Prompts</h2>
+                    <div class="card" style="margin-bottom: 15px; background-color: var(--color-bg-light); border-left: 4px solid var(--color-primary);">
+                        <p style="font-style: italic; color: var(--color-text);">"Activate the Literature Review skill. Here are the abstracts of 3 recent papers on climate modeling. Please create a comparison table of their methodologies and highlight any contradictions in their conclusions."</p>
+                    </div>
+                    <div class="card" style="background-color: var(--color-bg-light); border-left: 4px solid var(--color-primary);">
+                        <p style="font-style: italic; color: var(--color-text);">"Using the Data Synthesizer skill, review these raw interview transcripts and extract the top 5 recurring themes, providing direct quotes for each."</p>
+                    </div>
+                </section>
+
+                <!-- FAQ -->
+                <section id="faq" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 25px;">Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Can Claude Skills read PDF files directly?</h3>
+                        <p>If you are using the Claude Desktop app or the web interface, you can upload PDFs directly. If you are using Claude Code CLI, you may need to convert PDFs to text first or use an MCP server configured for document parsing.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>How do I prevent the AI from making up citations?</h3>
+                        <p>This is exactly what the "Constraints" section in the SKILL.md is for! By explicitly instructing the AI to state "Data not provided" when information is missing, you drastically reduce hallucinations and maintain academic integrity.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Is this suitable for official academic publishing?</h3>
+                        <p>Claude Skills are an incredible assistant for drafting, summarizing, and organizing research. However, you should always verify all extracted data, citations, and final claims manually before submitting to peer-reviewed journals.</p>
+                    </div>
+                </section>
+
+                <!-- Related Pages -->
+                <section id="related" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Related Pages</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;">✍️ <a href="claude-skills-for-writing.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Explore Writing & Documentation Skills</a></li>
+                        <li style="margin-bottom: 10px;">💻 <a href="claude-skills-for-developers.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">View Developer & API Integration Skills</a></li>
+                        <li style="margin-bottom: 10px;">🛒 <a href="claude-skills-marketplace.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Browse the Skills Marketplace</a></li>
+                    </ul>
+                </section>
+
+            </div>
+        </section>
+
+        <!-- Support This Project -->
+        <section id="support" class="section-padding bg-light">
+            <div class="container text-center">
+                <h2 class="section-title">Support This Project</h2>
+                <p class="support-text">Claude Skills Hub is maintained by the community. If this research guide helped you streamline your workflow, consider buying the maintainer a coffee!</p>
+                <a href="https://sevensky.gumroad.com/coffee" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">☕ Buy Me a Coffee</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Claude Skills Hub. Released under the MIT License.</p>
+            <p>Made with ❤️ by the open-source community and <strong>Seven Sky Tech</strong>.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
