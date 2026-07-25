@@ -1,0 +1,7 @@
+# robots.txt for Claude Skills Hub
+# https://sevenskytech1.github.io/claude-skills-hub/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sevenskytech1.github.io/claude-skills-hub/sitemap.xml
