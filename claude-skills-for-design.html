@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Social Sharing Tags -->
+    <title>Claude Skills for Design - UI/UX, Design Systems & Accessibility | Claude Skills Hub</title>
+    <meta name="description" content="Master Claude Skills for Design. Learn to build design systems, critique UI/UX layouts, and ensure accessibility with our free open-source SKILL.md templates.">
+    <meta name="keywords" content="Claude Skills for Design, UI/UX AI, design systems, accessibility, design tokens, SKILL.md, Figma AI">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Claude Skills for Design - UI/UX, Design Systems & Accessibility">
+    <meta property="og:description" content="Learn to build design systems, critique UI/UX layouts, and ensure accessibility with free open-source SKILL.md templates.">
+    <meta property="og:type" content="article">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Page-specific styling -->
+    <style>
+        .code-block {
+            background-color: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            text-align: left;
+            white-space: pre-wrap;
+        }
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+        .toc-list li {
+            margin-bottom: 10px;
+        }
+        .toc-list a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        .faq-item {
+            margin-bottom: 25px;
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--color-text);
+        }
+        .faq-item p {
+            color: var(--color-text-muted);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Accessibility: Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Claude Skills Hub</a>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#categories">Categories</a></li>
+                    <li><a href="index.html#why">Why Claude Skills?</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#support" class="nav-highlight">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <!-- Page Header -->
+        <section class="section-padding bg-light">
+            <div class="container text-center">
+                <h1 class="section-title">Claude Skills for Design</h1>
+                <p class="hero-text">The ultimate guide for designers to build scalable design systems, critique UI/UX layouts, and ensure perfect accessibility.</p>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted);">Last updated: July 2026</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container" style="max-width: 800px;">
+                
+                <!-- Introduction -->
+                <p style="margin-bottom: 30px; font-size: 1.05rem; line-height: 1.7;">
+                    Welcome to the guide for <strong>Claude Skills for Design</strong>. While AI image generators create pictures, Claude Skills turn Claude into a senior design partner. Use these templates to generate design tokens, audit your interfaces for WCAG accessibility, and translate visual concepts into clean, developer-ready code.
+                </p>
+
+                <!-- Table of Contents -->
+                <div class="card" style="margin-bottom: 40px;">
+                    <h3 style="margin-bottom: 15px;">📑 Table of Contents</h3>
+                    <ul class="toc-list">
+                        <li><a href="#what">1. What are Claude Skills?</a></li>
+                        <li><a href="#why">2. Why use Skills for Design?</a></li>
+                        <li><a href="#featured">3. Practical SKILL.md Example</a></li>
+                        <li><a href="#installation">4. Installation Guide</a></li>
+                        <li><a href="#prompts">5. Example Prompts</a></li>
+                        <li><a href="#faq">6. Frequently Asked Questions</a></li>
+                        <li><a href="#related">7. Related Pages</a></li>
+                    </ul>
+                </div>
+
+                <!-- What are Claude Skills? -->
+                <section id="what" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">What are Claude Skills?</h2>
+                    <p style="color: var(--color-text-muted); line-height: 1.7;">
+                        Claude Skills are predefined sets of instructions, tools, and contexts that you can give to Claude. For designers, this means defining your brand's design system rules, accessibility standards, and preferred coding frameworks so the AI provides feedback and assets that align perfectly with your team's visual language.
+                    </p>
+                </section>
+
+                <!-- Why use this category? -->
+                <section id="why" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Why use Skills for Design?</h2>
+                    <ul style="color: var(--color-text-muted); line-height: 1.7; padding-left: 20px;">
+                        <li style="margin-bottom: 10px;"><strong>Automate Design Systems:</strong> Instantly generate JSON/CSS design tokens, typography scales, and color palettes.</li>
+                        <li style="margin-bottom: 10px;"><strong>Accessibility Audits:</strong> Get immediate, structured feedback on contrast ratios and WCAG 2.1 compliance.</li>
+                        <li style="margin-bottom: 10px;"><strong>Design-to-Code:</strong> Seamlessly translate UI concepts into Tailwind CSS, HTML, or React components.</li>
+                    </ul>
+                </section>
+
+                <!-- Practical SKILL.md Example -->
+                <section id="featured" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Practical SKILL.md Example</h2>
+                    <p style="color: var(--color-text-muted); margin-bottom: 15px; line-height: 1.7;">
+                        Below is a powerful skill for UI/UX workflows. It ensures Claude prioritizes accessibility, structures design tokens correctly, and provides actionable design feedback.
+                    </p>
+                    <div class="code-block">
+# Skill: UI/UX Design System & Feedback Assistant
+
+## Description
+Assists designers in creating design tokens, critiquing UI layouts for accessibility, and generating CSS/Tailwind code for design systems.
+
+## Instructions
+1. When asked to critique a UI, evaluate it based on visual hierarchy, contrast ratios (WCAG), and user flow.
+2. When generating design tokens, output them in JSON or CSS variables format.
+3. Suggest accessible color combinations and typography scales (using a modular scale like 1.25).
+4. If requested, translate design concepts into clean HTML/CSS or Tailwind utility classes.
+
+## Constraints
+- Always prioritize accessibility (WCAG 2.1 AA standards) in color and typography suggestions.
+- Do not generate raster images; instead, provide detailed prompts for image generators or write SVG code.
+- Keep design feedback constructive, specific, and actionable.
+                    </div>
+                </section>
+
+                <!-- Installation -->
+                <section id="installation" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Installation Guide</h2>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 15px;">
+                        Set up this design skill in your workspace in three simple steps:
+                    </p>
+                    <ol style="color: var(--color-text-muted); line-height: 1.7; padding-left: 20px;">
+                        <li style="margin-bottom: 10px;">Create a folder in your project root named <code>.claude/skills/</code> (or keep it in your design documentation folder).</li>
+                        <li style="margin-bottom: 10px;">Create a file named <code>ui-ux-assistant.md</code> and paste the code from the example above.</li>
+                        <li style="margin-bottom: 10px;">When working on a new interface, simply say: <em>"Use the UI/UX Assistant skill to review this wireframe description and suggest a color palette..."</em></li>
+                    </ol>
+                </section>
+
+                <!-- Example Prompts -->
+                <section id="prompts" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Example Prompts</h2>
+                    <div class="card" style="margin-bottom: 15px; background-color: var(--color-bg-light); border-left: 4px solid var(--color-primary);">
+                        <p style="font-style: italic; color: var(--color-text);">"Activate the UI/UX Assistant skill. I am designing a dashboard for a fintech app. Please generate a primary and secondary color palette in JSON format, ensuring all text/background combinations meet WCAG AA standards."</p>
+                    </div>
+                    <div class="card" style="background-color: var(--color-bg-light); border-left: 4px solid var(--color-primary);">
+                        <p style="font-style: italic; color: var(--color-text);">"Using the Design System skill, critique this landing page layout: [describe layout]. Focus on visual hierarchy and suggest improvements for mobile responsiveness."</p>
+                    </div>
+                </section>
+
+                <!-- FAQ -->
+                <section id="faq" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 25px;">Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Can Claude generate actual images or icons?</h3>
+                        <p>Claude is a text-based AI, so it cannot generate raster images (like PNGs or JPGs). However, it can write highly detailed prompts for Midjourney or DALL-E, generate scalable SVG code for icons, or create CSS-based illustrations.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>How does this integrate with Figma?</h3>
+                        <p>While Claude doesn't plug directly into Figma's canvas, it is incredible at writing Figma Plugin code (using TypeScript) or generating the exact design tokens (JSON) that you can import into Figma using plugins like Tokens Studio.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Can it check my actual color contrast ratios?</h3>
+                        <p>Yes! If you provide the HEX codes for your foreground and background colors, Claude can calculate the contrast ratio and tell you if it passes WCAG AA or AAA standards.</p>
+                    </div>
+                </section>
+
+                <!-- Related Pages -->
+                <section id="related" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Related Pages</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;">💻 <a href="claude-skills-for-front-end-design.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Explore Front-End Design & React/Tailwind Skills</a></li>
+                        <li style="margin-bottom: 10px;">✍️ <a href="claude-skills-for-writing.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">View Writing & Content Editing Skills</a></li>
+                        <li style="margin-bottom: 10px;">🛒 <a href="claude-skills-marketplace.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Browse the Skills Marketplace</a></li>
+                    </ul>
+                </section>
+
+            </div>
+        </section>
+
+        <!-- Support This Project -->
+        <section id="support" class="section-padding bg-light">
+            <div class="container text-center">
+                <h2 class="section-title">Support This Project</h2>
+                <p class="support-text">Claude Skills Hub is maintained by the community. If this design guide helped you build better interfaces, consider buying the maintainer a coffee!</p>
+                <a href="https://sevensky.gumroad.com/coffee" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">☕ Buy Me a Coffee</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Claude Skills Hub. Released under the MIT License.</p>
+            <p>Made with ❤️ by the open-source community and <strong>Seven Sky Tech</strong>.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
